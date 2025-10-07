@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> Sons Kauan R. </title>
-
+    <title> Sons Kauan R. - Mario Edition </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Adicionei uma fonte pixelada para tema Mario (opcional, baixe de Google Fonts ou use 'Press Start 2P') -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/eu.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
-
 </head>
-
-<body>
-    <h1 class="titulo"> Meus Sons </h1>
-
+<body class="mario-theme"> <!-- Adicionei classe para tema -->
+    <h1 class="titulo"> Meus Sons </h1> <!-- Pode mudar para "Mario Sounds" se quiser -->
     <section class="teclado">
-        <button class="tecla tecla_pom"><img src="images/aplausos.svg" alt="Aplausos"></button>
-        <button class="tecla tecla_clap"><img src="images/galo.png" alt="Galo"></button>
-        <button class="tecla tecla_tim"><img src="images/amigos.png" alt="Sem Amigos"></button>
-        <button class="tecla tecla_puff"><img src="images/vitoria.svg" alt="Parabéns"></button>
-        <button class="tecla tecla_splash"><img src="images/errado.svg" alt="Errou"></button>
-        <button class="tecla tecla_toim"><img src="images/sinal.png" alt="Sinal"></button>
-        <button class="tecla tecla_psh"><img src="images/choro.png" alt="Choro"></button>
-        <button class="tecla tecla_tic"><img src="images/grilo.svg" alt="Grilo"></button>
-        <button class="tecla tecla_t"><img src="images/tambores.svg" alt="Tambores"></button>
-        <button class="tecla tecla_i"><img src="images/senta.png" alt="Senta lá, Cláudia"></button>
-        <button class="tecla tecla_c"><img src="images/certo.png" alt="Você está certo, disso"></button>
-        <button class="tecla tecla_tom"><img src="images/stop.png" alt="Stop"></button>
+        <button class="tecla tecla_pom mario-block"><img src="images/jump.png" alt="Aplausos"></button>
+        <button class="tecla tecla_clap mario-block"><img src="images/coin-spin.gif" alt="Galo"></button>
+        <button class="tecla tecla_tim mario-block"><img src="images/cogumelo-mario-bros.gif" alt="Sem Amigos"></button>
+        <button class="tecla tecla_puff mario-coin"><img src="images/mario-one-up-button.gif" alt="Parabéns"></button> <!-- Exemplo: estilo moeda -->
+        <button class="tecla tecla_splash mario-block"><img src="images/Goomba_(stomped-eng)_-_Super_Mario_Sticker.gif" alt="Errou"></button>
+        <button class="tecla tecla_toim mario-block"><img src="images/super-mario-world-super-mario-maker.gif"></button>
+        <button class="tecla tecla_psh mario-mushroom"><img src="images/images.png" alt="Choro"></button> <!-- Exemplo: cogumelo -->
+        <button class="tecla tecla_tic mario-block"><img src="images/Pause screen.png" alt="Grilo"></button>
+        <button class="tecla tecla_t mario-brick"><img src="images/download.jpeg" alt="Tambores"></button> <!-- Exemplo: tijolo -->
+        <button class="tecla tecla_i mario-block"><img src="images/fire-mario-mario-portal.gif" alt="Senta lá, Cláudia"></button>
+        <button class="tecla tecla_c mario-star"><img src="images/mario-bros-star-star-arcade.gif" alt="Você está certo, disso"></button> <!-- Exemplo: estrela -->
+        <button class="tecla tecla_tom mario-pipe"><img src="images/mario-pipe.gif" alt="Stop"></button> <!-- Exemplo: cano -->
     </section>
-
-    <audio src="sounds/os-cara-tão-seguindo-o-homer-kkkk-viraliza-oscara-teto-homersimpson.mp3" id="som_tecla_pom"></audio>
-    <audio src="sounds/Galo.mp3" id="som_tecla_clap"></audio>
-    <audio src="sounds/amigos.mp3" id="som_tecla_tim"></audio>
-    <audio src="sounds/parabens.mp3" id="som_tecla_puff"></audio>
-    <audio src="sounds/errou.mp3" id="som_tecla_splash"></audio>
-    <audio src="sounds/sinal.mp3" id="som_tecla_toim"></audio>
-    <audio src="sounds/choro.mp3" id="som_tecla_psh"></audio>
-    <audio src="sounds/cri.mp3" id="som_tecla_tic"></audio>
-    <audio src="sounds/tambores.wav" id="som_tecla_t"></audio>
-    <audio src="sounds/Senta lá.mp3" id="som_tecla_i"></audio>
-    <audio src="sounds/Certo.mp3" id="som_tecla_c"></audio>
-    <audio src="sounds/stop.mp3" id="som_tecla_tom"></audio>
+    <!-- Áudios alterados para tema Mario Bros. - Baixe os arquivos e coloque em sounds/ -->
+    <audio src="sounds/mario_jump.mp3" id="som_tecla_pom"></audio> <!-- Pulo do Mario (para "pom") -->
+    <audio src="sounds/mario_coin.mp3" id="som_tecla_clap"></audio> <!-- Moeda (para "clap") -->
+    <audio src="sounds/mario_powerup.mp3" id="som_tecla_tim"></audio> <!-- Power-up aparecendo (para "tim") -->
+    <audio src="sounds/mario_1up.mp3" id="som_tecla_puff"></audio> <!-- 1-UP (para "puff"/parabéns) -->
+    <audio src="sounds/mario_stomp.mp3" id="som_tecla_splash"></audio> <!-- Pisar em inimigo (para "splash"/errou) -->
+    <audio src="sounds/mario_flagpole.mp3" id="som_tecla_toim"></audio> <!-- Bandeira da fase (para "toim"/sinal) -->
+    <audio src="sounds/mario_die.mp3" id="som_tecla_psh"></audio> <!-- Mario morrendo (para "psh"/choro) -->
+    <audio src="sounds/mario_pause.mp3" id="som_tecla_tic"></audio> <!-- Pausa (para "tic"/grilo) -->
+    <audio src="sounds/mario_levelclear.mp3" id="som_tecla_t"></audio> <!-- Fim de fase (para "t"/tambores) -->
+    <audio src="sounds/mario_fireball.mp3" id="som_tecla_i"></audio> <!-- Bola de fogo (para "i"/senta) -->
+    <audio src="sounds/mario_starman.mp3" id="som_tecla_c"></audio> <!-- Modo estrela/invencível (para "c"/certo) -->
+    <audio src="sounds/mario_pipe.mp3" id="som_tecla_tom"></audio> <!-- Entrar em cano (para "tom"/stop) -->
 
     <footer class="rodape">
         <img src="images/bem_vindo.gif" class="kauan">
-        <p class="by"> Última Atualização: 05/02/2024 </p>
+        <p class="by"> Última Atualização: 05/02/2024 - Mario Edition! </p>
     </footer>
 
 <script src="main.js"> </script>
 
 </body>
-
 </html>
